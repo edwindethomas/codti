@@ -117,3 +117,40 @@ li {
 .font--l {
   font-size: 2rem;
 }
+/*Linea de ramas*/
+.root-line {
+  position: relative;
+  margin: 0 auto;
+  max-width: 120rem;
+  height: 100%;
+}
+.root {
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+}
+.root:nth-child(even) {
+  left: 55%;
+}
+.root-line::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.root::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.root:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
