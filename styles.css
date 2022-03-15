@@ -117,3 +117,14 @@ li {
 .font--l {
   font-size: 2rem;
 }
+
+.palprog__info{
+  margin:10rem 0 0 0;
+  padding: 5rem;
+  background-color: #f1f1f2;
+}
+
+.footer {
+  background: #000;
+  color: #f1f1f2;
+}
